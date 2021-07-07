@@ -1,1 +1,695 @@
-@import 'vendor/bootstrap/bootstrap'
+@import url('https://fonts.googleapis.com/css?family=Forum|Montserrat:400,500,700,900|Roboto+Condensed:300i,400,700&subset=latin-ext');
+
+
+@font-face {
+    font-family: 'Heuristica';
+    src: url('./fonts/Heuristica-Bold.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-Bold.otf')  format('opentype'),
+    url('./fonts/Heuristica-Bold.woff') format('woff'), url('./fonts/Heuristica-Bold.ttf')  format('truetype'), url('./fonts/Heuristica-Bold.svg#Heuristica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heuristica';
+    src: url('./fonts/Heuristica-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-BoldItalic.otf')  format('opentype'),
+    url('./fonts/Heuristica-BoldItalic.woff') format('woff'), url('./fonts/Heuristica-BoldItalic.ttf')  format('truetype'), url('./fonts/Heuristica-BoldItalic.svg#Heuristica-Bold') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Heuristica';
+    src: url('./fonts/Heuristica-Regular.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-Regular.otf')  format('opentype'),
+    url('./fonts/Heuristica-Regular.woff') format('woff'), url('./fonts/Heuristica-Regular.ttf')  format('truetype'), url('./fonts/Heuristica-Regular.svg#Heuristica-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heuristica';
+    src: url('./fonts/Heuristica-Italic.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-Italic.otf')  format('opentype'),
+    url('./fonts/Heuristica-Italic.woff') format('woff'), url('./fonts/Heuristica-Italic.ttf')  format('truetype'), url('./fonts/Heuristica-Italic.svg#Heuristica-Bold') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+// @import "vendor/bootstrap.min";
+// @import "vendor/hamburgers.min";
+// @import "vendor/animate";
+// @import "vendor/magnific-popup";
+// @import "vendor/font-awesome.min.css";
+// @import "vendor/fullpage.min";
+// @import "vendor/owl.carousel.min";
+
+$red: #DF012D;
+$lightgray: #EFEFEF;
+$darkgray: #444242;
+$black: #000000;
+$white: #ffffff;
+$gold: #96814b;
+
+$header-margin-top: 40px;
+$header-margin-bottom: 30px;
+$header-container-height: 60px;
+
+body {
+    font-family: "Heuristica", sans-serif;
+    @media (min-width: 768px) {
+        padding-top: calc(#{$header-container-height} + #{$header-margin-top} + #{$header-margin-bottom} + 40px);
+    }
+}
+a {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+h1, h2, h3, h4, h5, h6, .force-heading-font {
+    font-family: "Forum", sans-serif;
+}
+.container {
+    //max-width: 1700px;
+}
+
+.hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    outline: none !important;
+}
+
+div.mfp-content {
+    width: 1000px !important;
+    max-width: 90vw;
+}
+
+#popup-support, #popup-support-cyclic {
+    background: $gold;
+    padding: 50px 100px;
+    color: $white;
+    @media (max-width: 580px) {
+        padding: 30px 10px;
+    }
+    input {
+        width: 100%;
+        border: none;
+        background: $white;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+        &.inactive {
+            opacity: 0.5;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $black;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: $black;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            color: $black;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: $black;
+        }
+        &::placeholder {
+            color: $black;
+        }
+
+    }
+    button:not(.mfp-close), a#donation-form-submit-cyclic {
+        width: 100%;
+        background: $white;
+        border: 0;
+        padding: 10px;
+        color: $gold;
+        font-weight: 600;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            border-radius: 10px;
+        }
+        &.text-black {
+            color: $black;
+        }
+        &.submit {
+            width: 50%;
+        }
+        &.inactive {
+            opacity: 0.5;
+        }
+    }
+    h3 {
+        margin-top: 30px;
+        font-family: inherit;
+    }
+    .agreement {
+        font-size: 12px;
+    }
+    .agreement-checkbox {
+        top: -15px;
+        left: -8px;
+        position: relative;
+        @media (max-width: 580px) {
+            left: 5px;
+        }
+    }
+    /* Base for label styling */
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+        position: relative;
+        padding-left: 34px;
+        cursor: pointer;
+        margin-bottom: 9px;
+        display: inline-block;
+        font-size: 19px;
+    }
+    /* checkbox aspect */
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+        content: '';
+        position: absolute;
+        left: -5px; top: 0px;
+        width: 30px; height: 30px;
+        border: 1px solid #cccccc;
+        background: #ffffff;
+        border-radius: 0px;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+    }
+    /* checked mark aspect */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+        content: '✔';
+        position: absolute;
+        top: 0px; left: 1px;
+        font-size: 29px;
+        line-height: 0.8;
+        color: #09ad7e;
+        transition: all .2s;
+    }
+    /* checked mark aspect changes */
+    [type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+    [type="checkbox"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+    /* disabled checkbox */
+    [type="checkbox"]:disabled:not(:checked) + label:before,
+    [type="checkbox"]:disabled:checked + label:before {
+        box-shadow: none;
+        border-color: #999999;
+        background-color: #dddddd;
+    }
+    [type="checkbox"]:disabled:checked + label:after {
+        color: #999999;
+    }
+    [type="checkbox"]:disabled + label {
+        color: #aaaaaa;
+    }
+    /* accessibility */
+    [type="checkbox"]:checked:focus + label:before,
+    [type="checkbox"]:not(:checked):focus + label:before {
+        border: 2px dotted #a8a8a8;
+    }
+}
+
+aside#navigation-panel {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $white;
+    nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            a {
+                display: block;
+                text-align: center;
+                font-size: 20px;
+                color: $gold;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+button {
+    outline: none;
+    &:active, &:focus {
+        outline: none;
+    }
+}
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    z-index: 100;
+    background-color: $white;
+    @media (min-width: 768px) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .container {
+        height: $header-container-height;
+    }
+    padding-top: $header-margin-top;
+    padding-bottom: $header-margin-bottom;
+    img.logo {
+        float: left;
+        height: 160px;
+        position: relative;
+        left: -17px;
+        top: -29px;
+        @media (max-width: 767px) {
+            float: none;
+            max-width: 80%;
+            height: 100px;
+            left: 0;
+        }
+    }
+    nav {
+        ul {
+            font-family: Heuristica, sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 22px;
+            font-weight: 500;
+            list-style: none;
+            position: relative;
+            top: 20px;
+            li {
+                width: 20%;
+                text-align: center;
+                float: left;
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                        color: $gold;
+                    }
+                }
+                &.current_page_item {
+                    color: $gold;
+                }
+            }
+        }
+        .languages {
+            position: absolute;
+            top: 17px;
+            right: -30px;
+            li {
+                list-style: none;
+                margin: 0;
+                font-family: Montserrat, sans-serif;
+                font-size: 24px;
+                text-transform: capitalize;
+                a {
+                    color: $darkgray;
+                    &:hover {
+                        color: $black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//.backdrop-lines {
+//    position: fixed;
+//    top: 0;
+//    width: 100vw;
+//    height: 100vh;
+//    left: 0;
+//    right: 0;
+//    margin-left: auto;
+//    margin-right: auto;
+//    z-index: -1;
+//    .row {
+//        height: 100%;
+//    }
+//    .col-md-2 {
+//        height: 100%;
+//        border-right: 1px solid $lightgray;
+//        &:first-of-type {
+//            border-left: 1px solid $lightgray;
+//        }
+//    }
+//}
+
+.projects-list {
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .post {
+        background-color: $white;
+        margin-bottom: 30px;
+        .thumbnail {
+            height: 300px;
+            background-size: cover;
+            background-position: center center;
+        }
+        .text {
+            padding: 30px;
+            .title {
+                font-size: 22px;
+                font-weight: 900;
+                margin-bottom: 30px;
+            }
+        }
+     }
+}
+
+
+.support-cta {
+    margin-top: 60px;
+    background-color: $gold;
+    .inner-container {
+        padding: 80px 0;
+        h2 {
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 80px;
+            @media (max-width: 767px) {
+                font-size: 30px;
+            }
+        }
+        button {
+            background-color: $gold;
+            color: $white;
+            font-family: Forum, sans-serif;
+            border: 1px $gold solid;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 8px 0;
+            cursor: pointer;
+            border: 1px solid $white;
+            margin-bottom: 15px;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: $white;
+                color: $gold;
+            }
+        }
+    }
+}
+
+div.press-release {
+    background-color: $lightgray;
+    padding: 75px 0;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+        padding: 30px 15px;
+    }
+    .date {
+        font-family: "Forum", sans-serif;
+        color: #444242;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+    .content {
+        font-size: 22px;
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+    .attachment {
+        a {
+            color: $gold;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+    }
+}
+
+footer {
+    font-size: 18px;
+    color: $darkgray;
+    background-color: $lightgray;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    h1 {
+        font-size: 30px;
+        color: $black;
+        font-family: Heuristica, sans-serif;
+        margin-bottom: 30px;
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+        i {
+            color: $white;
+            background-color: #AEAFB0;
+            font-size: 20px !important;
+            display: inline-flex !important;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-left: 5px;
+            &:first-of-type {
+                margin-left: 15px;
+            }
+            @media (max-width: 767px) {
+                position: relative;
+                top: 10px;
+            }
+        }
+    }
+}
+
+.page-title-bar {
+    background-color: $gold;
+    color: $white;
+    margin-bottom: 50px;
+    h1 {
+        font-family: Forum, sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 7px 0;
+        margin: 0;
+    }
+}
+
+.plus-sign {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 3px;
+
+    &:before,
+    &:after {
+        content: "";
+        background-color: $gold;
+        position: absolute;
+        transition: transform 0.25s ease-out;
+    }
+
+    /* Vertical line */
+    &:before {
+        top: 0;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        margin-left: -2px;
+    }
+
+    /* horizontal line */
+    &:after {
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        margin-top: -2px;
+    }
+}
+
+section.contact-form {
+    padding: 150px 0;
+    background-color: $lightgray;
+    font-family: "Forum", sans-serif;
+    @media (max-width: 767px) {
+        padding: 50px 15px;
+    }
+    input, textarea {
+        width: 100%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: $black;
+        padding: 10px;
+        @media (max-width: 767px) {
+            width: 80%;
+            margin-bottom: 15px;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $black;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: $black;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            color: $black;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: $black;
+        }
+        &::placeholder {
+            color: $black;
+        }
+    }
+    input:first-of-type {
+        margin-bottom: 15px;
+    }
+    input {
+        border-bottom: 1px $black solid;
+    }
+    textarea {
+        height: 100%;
+        border: 1px $black solid;
+    }
+    .agreement {
+        font-weight: 200;
+        padding: 15px 0 0 0px;
+        font-size: 14px;
+        @media (max-width: 767px) {
+            padding: 30px;
+            font-size: 12px;
+        }
+    }
+    .agreement-checkbox {
+        @media (max-width: 767px) {
+            padding-top: 50px !important;
+        }
+    }
+    button {
+        border: 1px solid $black;
+        background: rgba(255, 255, 255, 0);
+        color: $black;
+        padding: 10px 40px;
+        cursor: pointer;
+        transition: 0.2s all ease-in-out;
+        &:hover {
+            color: $gold;
+            background-color: $white;
+        }
+    }
+    /* Base for label styling */
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+        position: relative;
+        padding-left: 34px;
+        cursor: pointer;
+        margin-bottom: 9px;
+        display: inline-block;
+        font-size: 19px;
+    }
+    /* checkbox aspect */
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+        content: '';
+        position: absolute;
+        left: -5px; top: 0px;
+        width: 30px; height: 30px;
+        border: 1px solid #cccccc;
+        background: #ffffff;
+        border-radius: 0px;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+    }
+    /* checked mark aspect */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+        content: '✔';
+        position: absolute;
+        top: 0px; left: 1px;
+        font-size: 29px;
+        line-height: 0.8;
+        color: #09ad7e;
+        transition: all .2s;
+    }
+    /* checked mark aspect changes */
+    [type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+    [type="checkbox"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+    /* disabled checkbox */
+    [type="checkbox"]:disabled:not(:checked) + label:before,
+    [type="checkbox"]:disabled:checked + label:before {
+        box-shadow: none;
+        border-color: #999999;
+        background-color: #dddddd;
+    }
+    [type="checkbox"]:disabled:checked + label:after {
+        color: #999999;
+    }
+    [type="checkbox"]:disabled + label {
+        color: #aaaaaa;
+    }
+    /* accessibility */
+    [type="checkbox"]:checked:focus + label:before,
+    [type="checkbox"]:not(:checked):focus + label:before {
+        border: 2px dotted #a8a8a8;
+    }
+}
+
+// @import "pages/home";
+// @import "pages/about";
+// @import "pages/contact";
+// @import "pages/media";
+// @import "pages/support";
+// @import "pages/project";

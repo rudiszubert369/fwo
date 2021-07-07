@@ -1,23 +1,324 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <div class="col-1"><p>hi</p></div>
-    <div class="col-md-12"><p>hi</p></div>
-    <div class="col-3"><p>hi</p></div>
-    <h1>Hellooo</h1>
-    <h2>Hellooo</h2>
-    <h3>Helloooo</h3>
-    <div class="btn-group" role="group" aria-label="...">
-    <button type="button" class="btn btn-default">Left</button>
-    <button type="button" class="btn btn-default">Middle</button>
-    <button type="button" class="btn btn-default">Right</button>
+  <!doctype html>
+  <html lang="pl-PL" class="no-js">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Fundacja Wysokich Obcasów</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/img/icons/favicon.png" rel="shortcut icon">
+    <link href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fundacja Wysokich Obcasów">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
+        "ext": ".png",
+        "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
+        "svgExt": ".svg",
+        "source": {
+          "concatemoji": "https:\/\/www.fundacjawysokichobcasow.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.13"
+        }
+      };
+      ! function(e, a, t) {
+        var n, r, o, i = a.createElement("canvas"),
+          p = i.getContext && i.getContext("2d");
+
+        function s(e, t) {
+          var a = String.fromCharCode;
+          p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+          e = i.toDataURL();
+          return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+        }
+
+        function c(e) {
+          var t = a.createElement("script");
+          t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+        }
+        for (o = Array("flag", "emoji"), t.supports = {
+            everything: !0,
+            everythingExceptFlag: !0
+          }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+          if (!p || !p.fillText) return !1;
+          switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+            case "flag":
+              return s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) ? !1 : !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128,
+                56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447
+              ]);
+            case "emoji":
+              return !s([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039])
+          }
+          return !1
+        }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+        t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+          t.DOMReady = !0
+        }, t.supports.everything || (n = function() {
+          t.readyCallback()
+        }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+          "complete" === a.readyState && t.readyCallback()
+        })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+      }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link rel='stylesheet' id='cookie-notice-front-css' href='https://www.fundacjawysokichobcasow.pl/wp-content/plugins/cookie-notice/css/front.min.css?ver=5.0.13' media='all' />
+    <link rel='stylesheet' id='css-css' href='https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/css/style.css?ver=1582927611' media='all' />
+    <script type='text/javascript' src='https://www.fundacjawysokichobcasow.pl/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='https://www.fundacjawysokichobcasow.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/js/bundle-min.js?ver=1582926972'></script>
+    <link rel='https://api.w.org/' href='https://www.fundacjawysokichobcasow.pl/wp-json/' />
+    <link rel="alternate" href="https://www.fundacjawysokichobcasow.pl/" hreflang="pl" />
+    <link rel="alternate" href="https://www.fundacjawysokichobcasow.pl/en/" hreflang="en" />
+    <script>
+      // conditionizr.com
+      // configure environment tests
+      conditionizr.config({
+        assets: 'https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw',
+        tests: {}
+      });
+    </script>
+  </head>
+
+  <body class="home logged-in cookies-set cookies-accepted">
+    <button class="hamburger hamburger--spin desktop-hide d-md-none" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <aside id="navigation-panel" class="d-none">
+      <nav>
+        <ul id="menu-pl" class="menu">
+          <li id="menu-item-564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-564"><a href="https://www.fundacjawysokichobcasow.pl/o-fundacji/">O fundacji</a></li>
+          <li id="menu-item-562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a href="https://www.fundacjawysokichobcasow.pl/projekty/">Projekty</a></li>
+          <li id="menu-item-563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-563"><a href="https://www.fundacjawysokichobcasow.pl/wesprzyj-nas/">Wesprzyj nas</a></li>
+          <li id="menu-item-566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-566"><a href="https://www.fundacjawysokichobcasow.pl/dla-mediow/">Dla mediów</a></li>
+          <li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565"><a href="https://www.fundacjawysokichobcasow.pl/kontakt/">Kontakt</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 text-center">
+            <a href="https://www.fundacjawysokichobcasow.pl/">
+              <img src="https://www.fundacjawysokichobcasow.pl/wp-content/themes/fundacjagw/img/logo.png" alt="Fundacja Wysokich Obcasów" class="logo" />
+            </a>
+          </div>
+          <div class="col-md-10 d-none d-md-block">
+            <nav>
+              <ul id="menu-pl-1" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-564"><a href="https://www.fundacjawysokichobcasow.pl/o-fundacji/">O fundacji</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a href="https://www.fundacjawysokichobcasow.pl/projekty/">Projekty</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-563"><a href="https://www.fundacjawysokichobcasow.pl/wesprzyj-nas/">Wesprzyj nas</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-566"><a href="https://www.fundacjawysokichobcasow.pl/dla-mediow/">Dla mediów</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565"><a href="https://www.fundacjawysokichobcasow.pl/kontakt/">Kontakt</a></li>
+              </ul>
+              <div class="languages">
+                <li class="lang-item lang-item-5 lang-item-en"><a lang="en-US" hreflang="en-US" href="https://www.fundacjawysokichobcasow.pl/en/">en</a></li>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container backdrop-lines">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+      </div>
     </div>
-  </div>
-</body>
-</html>
+    <section class="container home-slider mb-5">
+      <div class="row">
+        <div class="col pl-0 pr-0">
+          <div class="owl-carousel owl-carousel-home owl-theme">
+            <div class="item">
+              <div class="lead">
+                <div class="quote-mark">”</div>
+                Kobiety wiedzą co robią
+              </div>
+              <div class="signature">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="scroll-prompt">
+            <a href="#" id="scroll-prompt" class="d-none d-md-inline">
+              <div class="triangle"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid home-about prompt-target">
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="inner">
+                  <h2>O Fundacji</h2>
+                  <p class="p1"><span class="s1">Walka o prawa kobiet, upominanie się o najsłabszych, opisywanie nieopisanych herstorii czy wreszcie nagłaśnianie tematów związanych ze zdrowiem i psychologią to codzienność magazynu „Wysokie Obcasy”.
+                      Robimy to dla Was od 20 lat. Obiecujemy, że nigdy nie przestaniemy. Dlatego właśnie powstała Fundacja Wysokich Obcasów.</span></p>
+                  <div class="plus-link">
+                    <a href="https://www.fundacjawysokichobcasow.pl/o-fundacji/">
+                      Czytaj więcej <div class="plus-sign"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--<section class="container">-->
+    <!--    <div class="row justify-content-center">-->
+    <!--        <div class="col-md-8 pl-0 pr-0">-->
+    <!--            <h2 class="mb-5 pl-3 pl-md-0">-->
+    <!--</h2>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!---->
+
+    <section class="container index-import-about-partners">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-center text-md-left">
+            Nasi partnerzy </h2>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="owl-carousel owl-carousel-partners owl-theme">
+                  <div class="item">
+                    <a href="http://www.wysokieobcasy.pl/wysokie-obcasy/0,0.html" target="_blank">
+                      <img src="https://www.fundacjawysokichobcasow.pl/wp-content/uploads/2019/06/nowe-logo-WO-2.png" alt="Logo" />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="http://www.fundacjagazetywyborczej.pl" target="_blank">
+                      <img src="https://www.fundacjawysokichobcasow.pl/wp-content/uploads/2019/06/logo_fundacja-1-1.png" alt="Logo" />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="http://www.lena.news/" target="_blank">
+                      <img src="https://www.fundacjawysokichobcasow.pl/wp-content/uploads/2021/04/lena-logo.png" alt="Logo" />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://kulczykfoundation.org.pl/" target="_blank">
+                      <img src="https://www.fundacjawysokichobcasow.pl/wp-content/uploads/2021/04/Kulczyk-Foudation-logo.png" alt="Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid support-cta">
+      <div class="row">
+        <div class="col">
+          <div class="container inner-container">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <h2>Wesprzyj Fundację Wysokich Obcasów</h2>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <a href="#popup-support" class="open-popup-support" data-trigger-mode="support-mode-selection-single">
+                  <button>Wesprzyj jednorazowo</button>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="#popup-support-cyclic" class="open-popup-support" data-trigger-mode="support-mode-selection-regular">
+                  <button>Wspieraj długofalowo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+      <!-- <h1>
+        Fundacja Wysokich Obcasów<br class="d-md-none">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </h1>
+      <p><strong>Adres</strong> ul. Czerska 8/10,
+        00-732 Warszawa</p>
+      <p>
+        <strong>Nr konta</strong><br />
+        <strong>PLN</strong> PL40 2190 0002 3000 0046 4053 0101<br />
+      </p>
+      <p>
+        <strong>NIP</strong> 5213849673 &nbsp; &nbsp; &nbsp;
+        <strong>KRS</strong> 0000759171 </p>
+      <p class="mt-5">
+        <a href="https://www.fundacjawysokichobcasow.pl/polityka-prywatnosci/">Polityka prywatności</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Copyright © Fundacja Wysokich Obcasów
+      </p> -->
+    </footer>
+  </body>
+
+  </html>
