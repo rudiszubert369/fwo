@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="877" height="562" viewBox="0 0 877 562">
+  <g id="Group_151" data-name="Group 151" transform="translate(-520 -3038)">
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(832 3045)" fill="#fff" stroke="#cbb486" stroke-width="1">
+      <ellipse cx="128.5" cy="128" rx="128.5" ry="128" stroke="none"/>
+      <ellipse cx="128.5" cy="128" rx="128" ry="127.5" fill="none"/>
+    </g>
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(520 3038)" fill="#fff" stroke="#cbb486" stroke-width="1">
+      <ellipse cx="127.5" cy="128" rx="127.5" ry="128" stroke="none"/>
+      <ellipse cx="127.5" cy="128" rx="127" ry="127.5" fill="none"/>
+    </g>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(1140 3045)" fill="#fff" stroke="#cbb486" stroke-width="1">
+      <ellipse cx="128.5" cy="128" rx="128.5" ry="128" stroke="none"/>
+      <ellipse cx="128.5" cy="128" rx="128" ry="127.5" fill="none"/>
+    </g>
+    <text id="sprzedaż" transform="translate(892 3146)" font-size="29" font-family="PlayfairDisplay-Bold, Playfair Display" font-weight="700"><tspan x="0" y="0">sprzedaż</tspan></text>
+    <text id="czytelnictwo" transform="translate(567 3139)" font-size="29" font-family="PlayfairDisplay-Bold, Playfair Display" font-weight="700"><tspan x="0" y="0">czytelnictwo</tspan></text>
+    <text id="nakład" transform="translate(1191 3145)" font-size="29" font-family="PlayfairDisplay-Bold, Playfair Display" font-weight="700"><tspan x="0" y="0">nakład</tspan></text>
+    <text id="_88_164_egzemplarzy" data-name="88 164
+egzemplarzy" transform="translate(892 3209)" font-size="41" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">88 164</tspan><tspan font-size="16" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="25">egzemplarzy</tspan></tspan></text>
+    <text id="_326_164_czytelników" data-name="326 164
+czytelników" transform="translate(567 3200)" font-size="41" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">326 164</tspan><tspan font-size="16" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="25">czytelników</tspan></tspan></text>
+    <text id="_146_769_egzemplarzy" data-name="146 769
+egzemplarzy" transform="translate(1191 3207)" font-size="41" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">146 769</tspan><tspan font-size="16" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="25">egzemplarzy</tspan></tspan></text>
+    <line id="Line_12" data-name="Line 12" x2="142.462" transform="translate(892.454 3162.985)" fill="none" stroke="#cbb486" stroke-width="3"/>
+    <line id="Line_14" data-name="Line 14" x2="142.462" transform="translate(567.688 3155.741)" fill="none" stroke="#cbb486" stroke-width="3"/>
+    <line id="Line_13" data-name="Line 13" x2="142.462" transform="translate(1191.866 3161.778)" fill="none" stroke="#cbb486" stroke-width="3"/>
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(525 3340)" fill="none" stroke="#cbb486" stroke-width="1">
+      <rect width="471" height="222" stroke="none"/>
+      <rect x="0.5" y="0.5" width="470" height="221" fill="none"/>
+    </g>
+    <text id="serwis_wysokie_obcasy.pl" data-name="serwis wysokie obcasy.pl" transform="translate(564 3407)" font-size="29" font-family="PlayfairDisplay-Bold, Playfair Display" font-weight="700"><tspan x="0" y="0">serwis wysokie obcasy.pl</tspan></text>
+    <text id="_314_840_polubień" data-name="314 840 
+polubień" transform="translate(1193.065 3402.587)" font-size="41" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">314 840 </tspan><tspan font-size="16" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="25">polubień</tspan></tspan></text>
+    <text id="UU_2_853_704_PV_7_082_721_" data-name="UU 2 853 704 
+PV 7 082 721 " transform="translate(564 3468)" font-size="41" font-family="Lato-Medium, Lato" font-weight="500"><tspan x="0" y="0">UU</tspan><tspan y="0" font-family="Lato-Bold, Lato" font-weight="700"> </tspan><tspan y="0" font-family="Lato-Black, Lato" font-weight="800">2 853 704 </tspan><tspan x="0" y="49">PV</tspan><tspan y="49" font-family="Lato-Bold, Lato" font-weight="700"> </tspan><tspan y="49" font-family="Lato-Black, Lato" font-weight="800">7 082 721 </tspan></text>
+    <g id="Group_71" data-name="Group 71" transform="translate(1075.491 3364.002)">
+      <path id="Path_537" data-name="Path 537" d="M311.636,278.276a34.641,34.641,0,1,0,34.645,34.638,34.68,34.68,0,0,0-34.645-34.638Zm8.619,35.857h-5.635v20.092h-8.353V314.133H302.3v-7.1h3.971v-4.592c0-3.284,1.561-8.428,8.428-8.428l6.186.026v6.889h-4.489a1.7,1.7,0,0,0-1.772,1.934v4.177h6.364Zm0,0" transform="translate(-277 -278.276)" fill="#cbb486"/>
+    </g>
+    <g id="Group_72" data-name="Group 72" transform="translate(1075.491 3472.659)">
+      <path id="Path_538" data-name="Path 538" d="M220.172,213.586A6.586,6.586,0,1,1,213.586,207,6.586,6.586,0,0,1,220.172,213.586Z" transform="translate(-179.178 -179.178)" fill="#cbb486"/>
+      <path id="Path_539" data-name="Path 539" d="M167.085,140.033a6.543,6.543,0,0,0-3.75-3.75,10.935,10.935,0,0,0-3.668-.68c-2.084-.1-2.709-.116-7.984-.116s-5.9.02-7.984.115a10.941,10.941,0,0,0-3.668.68,6.546,6.546,0,0,0-3.75,3.75,10.937,10.937,0,0,0-.68,3.669c-.1,2.083-.116,2.708-.116,7.984s.021,5.9.116,7.984a10.932,10.932,0,0,0,.68,3.668,6.543,6.543,0,0,0,3.75,3.75,10.917,10.917,0,0,0,3.669.68c2.083.1,2.707.115,7.984.115s5.9-.02,7.984-.115a10.918,10.918,0,0,0,3.669-.68,6.543,6.543,0,0,0,3.75-3.75,10.944,10.944,0,0,0,.68-3.668c.1-2.084.115-2.708.115-7.984s-.02-5.9-.115-7.984A10.921,10.921,0,0,0,167.085,140.033Zm-15.4,21.8a10.146,10.146,0,1,1,10.146-10.146A10.146,10.146,0,0,1,151.682,161.831Zm10.547-18.321a2.371,2.371,0,1,1,2.371-2.371A2.371,2.371,0,0,1,162.229,143.51Z" transform="translate(-117.274 -117.277)" fill="#cbb486"/>
+      <path id="Path_540" data-name="Path 540" d="M34.408,0A34.408,34.408,0,1,0,68.816,34.408,34.412,34.412,0,0,0,34.408,0ZM54.047,42.554a14.5,14.5,0,0,1-.918,4.8,10.1,10.1,0,0,1-5.778,5.778,14.506,14.506,0,0,1-4.8.918c-2.107.1-2.78.119-8.146.119s-6.039-.023-8.146-.119a14.505,14.505,0,0,1-4.8-.918,10.1,10.1,0,0,1-5.778-5.778,14.492,14.492,0,0,1-.918-4.8c-.1-2.107-.12-2.78-.12-8.146s.023-6.039.119-8.146a14.5,14.5,0,0,1,.918-4.8,10.11,10.11,0,0,1,5.779-5.778,14.509,14.509,0,0,1,4.8-.918c2.107-.1,2.78-.119,8.146-.119s6.039.023,8.146.12a14.513,14.513,0,0,1,4.8.917,10.106,10.106,0,0,1,5.778,5.779,14.494,14.494,0,0,1,.919,4.8c.1,2.107.119,2.78.119,8.146S54.144,40.447,54.047,42.554Z" transform="translate(0 0)" fill="#cbb486"/>
+    </g>
+    <text id="_108_000_obserwujących" data-name="108 000 
+obserwujących" transform="translate(1193.065 3511.245)" font-size="41" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">108 000 </tspan><tspan font-size="16" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="25">obserwujących</tspan></tspan></text>
+    <text id="źródło:_Data_Ocean_PV_i_UU_w_ujęciu_miesięcznym_2021" data-name="źródło: Data Ocean, PV i UU w ujęciu miesięcznym, 2021" transform="translate(525 3597)" font-size="16" font-family="Lato-Medium, Lato" font-weight="500"><tspan x="0" y="0">źródło</tspan><tspan y="0" font-family="Lato-Bold, Lato" font-weight="700">: Data Ocean, PV i UU w ujęciu miesięcznym, 2021</tspan></text>
+  </g>
+</svg>
