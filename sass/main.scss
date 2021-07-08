@@ -1,38 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Forum|Montserrat:400,500,700,900|Roboto+Condensed:300i,400,700&subset=latin-ext');
-
-
-@font-face {
-    font-family: 'Heuristica';
-    src: url('./fonts/Heuristica-Bold.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-Bold.otf')  format('opentype'),
-    url('./fonts/Heuristica-Bold.woff') format('woff'), url('./fonts/Heuristica-Bold.ttf')  format('truetype'), url('./fonts/Heuristica-Bold.svg#Heuristica-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Heuristica';
-    src: url('./fonts/Heuristica-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-BoldItalic.otf')  format('opentype'),
-    url('./fonts/Heuristica-BoldItalic.woff') format('woff'), url('./fonts/Heuristica-BoldItalic.ttf')  format('truetype'), url('./fonts/Heuristica-BoldItalic.svg#Heuristica-Bold') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Heuristica';
-    src: url('./fonts/Heuristica-Regular.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-Regular.otf')  format('opentype'),
-    url('./fonts/Heuristica-Regular.woff') format('woff'), url('./fonts/Heuristica-Regular.ttf')  format('truetype'), url('./fonts/Heuristica-Regular.svg#Heuristica-Bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Heuristica';
-    src: url('./fonts/Heuristica-Italic.eot?#iefix') format('embedded-opentype'),  url('./fonts/Heuristica-Italic.otf')  format('opentype'),
-    url('./fonts/Heuristica-Italic.woff') format('woff'), url('./fonts/Heuristica-Italic.ttf')  format('truetype'), url('./fonts/Heuristica-Italic.svg#Heuristica-Bold') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 
 // @import "vendor/bootstrap.min";
@@ -48,14 +14,24 @@ $lightgray: #EFEFEF;
 $darkgray: #444242;
 $black: #000000;
 $white: #ffffff;
-$gold: #96814b;
+$gold: #A98439;
 
 $header-margin-top: 40px;
 $header-margin-bottom: 30px;
 $header-container-height: 60px;
 
+$primary_font_family: "Playfair Display", sans-serif;
+$secondary_font_family: "Lato", sans-serif;
+
+@mixin button {
+  background-color: black;
+  color: #fff;
+  margin: 0 auto;
+  padding: 5px 25px;
+}
+
 body {
-    font-family: "Heuristica", sans-serif;
+    font-family: $primary_font_family;
     @media (min-width: 768px) {
         padding-top: calc(#{$header-container-height} + #{$header-margin-top} + #{$header-margin-bottom} + 40px);
     }
@@ -298,7 +274,7 @@ header {
     }
     nav {
         ul {
-            font-family: Heuristica, sans-serif;
+            font-family: $primary_font_family;
             display: flex;
             justify-content: flex-end;
             font-size: 22px;
@@ -410,7 +386,7 @@ header {
         button {
             background-color: $gold;
             color: $white;
-            font-family: Forum, sans-serif;
+            font-family: $secondary_font_family;
             border: 1px $gold solid;
             border-radius: 5px;
             width: 100%;
@@ -472,11 +448,11 @@ footer {
     background-color: $lightgray;
     padding: 60px 0;
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: $primary_font_family;
     h1 {
         font-size: 30px;
         color: $black;
-        font-family: Heuristica, sans-serif;
+        font-family: $secondary_font_family;
         margin-bottom: 30px;
         @media (max-width: 767px) {
             font-size: 20px;
@@ -686,6 +662,203 @@ section.contact-form {
         border: 2px dotted #a8a8a8;
     }
 }
+
+
+
+//sikora
+
+::placeholder {
+  color: black;
+}
+
+  .button-dark {
+    @include button;
+
+  }
+
+  p {
+    font-family: $primary_font_family;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary_font_family;
+  }
+
+.hero-image-container {
+  background-color: $lightgray;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  img {
+    width: 100%;
+  }
+}
+
+section {
+  margin-bottom: 100px;;
+}
+
+.button-more-container {
+  margin-top: 50px;
+}
+
+.info-blocks  {
+  .row {
+    flex-flow: wrap;
+  }
+  .col {
+    background-color: $lightgray;
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 50px;
+    flex: 1;
+
+    a {
+      @include button;
+    }
+  }
+}
+
+.newsletter-area {
+  background-color: $gold;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  p {
+    max-width: 23em;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px
+  }
+
+  input {
+    display: block;
+    margin: 0 auto;
+    background-color: $gold;
+    padding-left: 5px;
+    border: 1px solid black;
+  }
+
+  .newsletter-submit {
+    @include button;
+  }
+}
+
+.projects-highlight {
+
+
+
+  .projects-list {
+    .row {
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 95px;
+    }
+
+  }
+}
+
+.herstories {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $gold;
+
+  .col  {
+    margin-bottom: 50px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.recent-updates {
+  .recent-updates-date-wrapper {
+    border-bottom: 2px solid #000;
+
+    p {
+      margin-bottom: 0;;
+    }
+  }
+
+  .recent-updats-inner {
+    background-color: $lightgray;
+    max-width: 30%;
+    padding-bottom: 60px;
+    padding-top: 5px;
+
+    img {
+      display: block;
+      margin: 30px auto;
+    }
+
+    .recent-updates-date {
+      font-family: "Lato", sans-serif;
+      text-align: left;
+    }
+  }
+
+}
+
+.our-partners  {
+  a {
+    // margin-left: 20px;
+    width: 23%;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    margin-top: 350px;
+    margin-bottom: 60px;
+  }
+}
+
+footer {
+  margin-top: -50px;
+
+
+  .footer-main {
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+
+    .footer-newsletter-button {
+      margin-top: 20px;
+    }
+
+    .footer-newsletter-input {
+      display: block;
+      margin: 0 auto;
+      background-color: $lightgray;
+      padding-left: 5px;
+      border: 1px solid black;
+
+    }
+  }
+
+
+  a {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // @import "pages/home";
 // @import "pages/about";

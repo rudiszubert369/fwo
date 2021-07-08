@@ -17,6 +17,6 @@ gulp.task('sass', function(){
 });
 
 gulp.task('watch', function() {
-  gulp.watch(input, ['sass', ])
+  gulp.watch(input, ['sass', 'styles'])
 
 });
