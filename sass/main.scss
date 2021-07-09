@@ -28,13 +28,16 @@ $secondary_font_family: "Lato", sans-serif;
   color: #fff;
   margin: 0 auto;
   padding: 5px 25px;
+  :hover {
+    color: #fff;
+  }
 }
 
 body {
     font-family: $primary_font_family;
-    @media (min-width: 768px) {
-        padding-top: calc(#{$header-container-height} + #{$header-margin-top} + #{$header-margin-bottom} + 40px);
-    }
+    // @media (min-width: 768px) {
+    //     padding-top: calc(#{$header-container-height} + #{$header-margin-top} + #{$header-margin-bottom} + 40px);
+    // }
 }
 a {
     color: inherit;
@@ -665,24 +668,42 @@ section.contact-form {
 
 
 
-//sikora
+//Custom
 
 ::placeholder {
   color: black;
 }
 
-  .button-dark {
-    @include button;
+.button-dark {
+  @include button;
+}
 
+p {
+  font-family: $primary_font_family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary_font_family;
+}
+
+.title-custom-left {
+  font-family: $primary_font_family;
+  font-weight: 300;
+}
+
+.inner {
+  padding: 100px 185px;
+
+  img {
+    width: 100%;
   }
 
-  p {
-    font-family: $primary_font_family;
+  @media (max-width: 767px) {
+    padding: 50px 0;
   }
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $secondary_font_family;
-  }
+//Homepage
 
 .hero-image-container {
   background-color: $lightgray;
@@ -704,7 +725,7 @@ section {
 
 .info-blocks  {
   .row {
-    flex-flow: wrap;
+    // flex-flow: wrap;
   }
   .col {
     background-color: $lightgray;
@@ -713,9 +734,15 @@ section {
     margin: 10px;
     margin-bottom: 50px;
     flex: 1;
+    height: 340px;
 
     a {
       @include button;
+    }
+  }
+  @media (max-width: 771px) {
+    .col {
+      height: auto;
     }
   }
 }
@@ -747,7 +774,10 @@ section {
 
 .projects-highlight {
 
-
+  #image-four-covers {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
   .projects-list {
     .row {
@@ -759,6 +789,12 @@ section {
     }
 
   }
+
+  @media (max-width: 1091px) {
+    .projects-list {
+      margin-top: 100px;
+    }
+  }
 }
 
 .herstories {
@@ -766,12 +802,29 @@ section {
   padding-bottom: 50px;
   background-color: $gold;
 
+
   .col  {
     margin-bottom: 50px;
   }
 
   p {
     margin-top: 20px;
+  }
+
+  .herstories-inner {
+    .col {
+      width: 28%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 550px) {
+      .col {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -789,10 +842,17 @@ section {
     max-width: 30%;
     padding-bottom: 60px;
     padding-top: 5px;
+    margin-bottom: 40px;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      width: 100%;
+    }
 
     img {
       display: block;
       margin: 30px auto;
+      width: 100%;
     }
 
     .recent-updates-date {
@@ -849,11 +909,52 @@ footer {
 
 
 
+//home-about
+
+.about-us {
+  margin-top: 100px;
+}
+
+.donors {
+  background-color: $lightgray;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h3 {
+    margin-bottom: 50px;
+  }
+}
 
 
+//Rada
+.avatars  {
+  figure {
+    width: 47%;
+    display:inline-block;
+    background-color: $lightgray;
+    padding: 10px 0px;
+  }
+  .avatar-image {
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 125px;
+    height: 125px;
+  }
 
+  figcaption {
+    font-family: $secondary_font_family;
+    font-weight: 600;
+    padding: 10px 40px;
 
-
+    span {
+      font-weight: 300;
+    }
+  }
+}
 
 
 
