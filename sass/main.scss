@@ -31,6 +31,7 @@ $secondary_font_family: "Lato", sans-serif;
   :hover {
     color: #fff;
   }
+  border: 0;
 }
 
 body {
@@ -723,8 +724,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-//Homepage
-
 .hero-image-container {
   background-color: $lightgray;
   margin-top: 100px;
@@ -732,6 +731,11 @@ h1, h2, h3, h4, h5, h6 {
 
   img {
     width: 100%;
+  }
+  @media (max-width: 768px) {
+    background-color: #EFEFEF;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -760,7 +764,9 @@ section {
       @include button;
     }
   }
-  @media (max-width: 771px) {
+  @media (max-width: 768px) {
+    margin-bottom: 20;
+
     .col {
       height: auto;
     }
@@ -830,22 +836,6 @@ section {
   p {
     margin-top: 20px;
   }
-
-  .herstories-inner {
-    .col {
-      width: 28%;
-    }
-
-    img {
-      width: 100%;
-    }
-
-    @media (max-width: 550px) {
-      .col {
-        width: 100%;
-      }
-    }
-  }
 }
 
 .recent-updates {
@@ -866,7 +856,7 @@ section {
 
     @media (max-width: 767px) {
       max-width: 100%;
-      width: 100%;
+      width: 80%;
     }
 
     img {
@@ -885,16 +875,21 @@ section {
 
 .our-partners  {
   a {
-    // margin-left: 20px;
     width: 23%;
     margin-bottom: 40px;
   }
 
   h2 {
-    margin-top: 350px;
+    margin-top: 40px;
     margin-bottom: 60px;
   }
+
+  img {
+     margin-bottom: 20px;
+  }
 }
+
+
 
 footer {
   margin-top: -50px;
@@ -923,14 +918,13 @@ footer {
     display: inline-block;
     width: 30%;
   }
+
+  @media (max-width: 767px) {
+    .col-md-4 {
+      margin-bottom: 50px;
+    }
+  }
 }
-
-
-
-
-
-//home-about
-
 
 .donors {
   background-color: $lightgray;
@@ -945,7 +939,6 @@ footer {
 }
 
 
-//Rada
 .avatars  {
   figure {
     width: 47%;
@@ -969,6 +962,17 @@ footer {
 
     span {
       font-weight: 300;
+    }
+  }
+
+  @media (max-width: 572px) {
+    .inner {
+      flex-direction:column;
+      padding: 0 0;
+    }
+    figure {
+      align-self: center;
+      width: 84%;
     }
   }
 }
@@ -1007,9 +1011,85 @@ footer {
   }
 }
 
-// @import "pages/home";
-// @import "pages/about";
-// @import "pages/contact";
-// @import "pages/media";
-// @import "pages/support";
-// @import "pages/project";
+
+.img-pc{
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.img-phone{
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.hamburger-box {
+  @media (max-width: 768px) {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    width: 40px;
+    height: 24px;
+  }
+}
+
+
+.linked {
+  a {
+    @media (max-width: 768px) {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 15px;
+  }
+}
+}
+
+.social {
+  a {
+    @media (max-width: 768px) {
+      display: inline-block;
+      width: 15%;
+    }
+  }
+}
+
+.button-custom-width {
+  width: 47%;
+}
+
+.single-project-title-screen {
+  @media (max-width: 768px) {
+    .col-md-6 {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+.projects-text-wrapper {
+  margin-bottom: 100px;
+  a {
+    float:right;
+    @media (max-width: 768px) {
+      display: table;
+      float: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
